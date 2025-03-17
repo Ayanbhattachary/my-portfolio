@@ -1,0 +1,116 @@
+.project-section {
+  display: flex;
+  height: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-data {
+  border: solid 1px var(--border-color-main);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+  margin: 20px 20px 0 0;
+  border-radius: 15px;
+  flex: 45%;
+}
+
+.project-data:nth-child(3),
+.project-data:nth-child(6) {
+  flex: 100%;
+}
+
+.dark .project-data {
+  border: solid 1px var(--border-color-dark);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 760px) {
+  .project-section {
+    flex-direction: column;
+  }
+
+  .project-data {
+    margin: 20px 0px 0 0;
+    width: 100%;
+  }
+}
+
+.project-screenshot {
+  /* transform: rotateZ(-5deg); */
+  height: auto;
+  background-color: transparent;
+}
+
+.project-screenshot > img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.project-details {
+  padding: 15px;
+  box-sizing: content-box;
+  color: var(--content-color-main);
+}
+
+.dark .project-details {
+  color: var(--content-color-dark);
+}
+
+.project-title {
+  font-size: var(--content-heading-size);
+  color: inherit;
+}
+
+.project-description {
+  font-size: var(--para-font);
+  margin: 15px 0;
+  color: inherit;
+}
+
+.technologies {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.technologies-used {
+  padding: 8px 15px;
+  border-radius: 35px;
+  color: var(--content-color-main);
+  font-size: var(--small-para-font);
+  border: 1px solid var(--content-color-main);
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.dark .technologies-used {
+  color: var(--content-color-dark);
+  border: 1px solid var(--content-color-dark);
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-size: var(--small-para-font);
+  text-decoration: none;
+  color: var(--content-color-main);
+}
+
+.project-link svg {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  fill: var(--content-color-main);
+}
+
+.dark .project-link {
+  color: var(--content-color-dark);
+}
+
+.dark .project-link svg {
+  fill: var(--content-color-dark);
+}

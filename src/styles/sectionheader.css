@@ -18,11 +18,6 @@
   text-align: center;
 }
 
-.dark .section-header h1,
-.dark .section-header p {
-  color: var(--content-color-dark);
-}
-
 .navigate-btn {
   margin-top: 20px;
   width: auto;
@@ -42,15 +37,6 @@
   height: 35px;
   fill: var(--content-color-main);
   margin-right: 10px;
-}
-
-.dark .section-nav-btn {
-  fill: var(--content-color-dark);
-}
-
-.dark .navigate-btn {
-  border: solid 1px var(--content-color-dark);
-  color: var(--content-color-dark);
 }
 
 .navigate-btn:hover {

@@ -27,7 +27,7 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
   height: var(--bubble-radius);
   border-radius: 50%;
   font-size: 2.4em;
-  color: var(--content-color-dark-opacity);
+  color: var(--content-color-main-opacity);
   animation: float-up var(--bubble-float-duration) var(--bubble-float-delay)
     ease-in infinite;
 
@@ -38,7 +38,6 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
     left: 0;
     width: 100%;
     height: 100%;
-    // background: var(--background-color-dark);
     background: transparent;
     border-radius: inherit;
     animation: var(--bubble-sway-type) var(--bubble-sway-duration)

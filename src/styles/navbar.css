@@ -5,7 +5,7 @@
   top: 0;
   z-index: 99999;
   width: 100vw;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 2px rgba(255, 255, 255, .12);
   background-color: var(--background-color-main);
 }
 
@@ -14,10 +14,6 @@
   justify-content: center;
   color: var(--content-color-main);
  }
-/* 
-.dark .navbar {
-  border-bottom: 1px solid var(--border-color-dark);
-} */
 
 .navbar-container {
   display: flex;
@@ -25,23 +21,13 @@
   flex-direction: row;
   padding: 0 15px;
   width: 95%;
-  height: 100px;
   align-items: center;
-}
-
-.dark .navbar {
-  color: var(--content-color-dark);
-  background-color: var(--background-color-dark);
 }
 
 .portfolio-logo {
   width: 60px;
   height: 60px;
   fill: var(--content-color-main);
-}
-
-.dark .portfolio-logo {
-  fill: var(--content-color-dark);
 }
 
 .navigation {
@@ -54,7 +40,7 @@
 .navigation ul {
   list-style: none;
   display: flex;
-  width: auto;
+  gap: 15px;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
@@ -64,26 +50,16 @@
   font-size: 1.2em;
   padding-bottom: 5px;
   color: var(--content-color-main-opacity);
-  /* opacity: 40%; */
   transition: all 0.25s;
   cursor: pointer;
-  margin-left: 35px;
 }
 
 .navigation ul li:nth-child(4) {
   color: var(--content-color-main);
 }
 
-.dark .navigation ul li {
-  color: var(--content-color-dark-opacity);
-}
-
 .navigation ul li:hover {
   color: var(--content-color-main);
-}
-
-.dark .navigation ul li:hover {
-  color: var(--content-color-dark);
 }
 
 .active-nav > li {
@@ -91,10 +67,6 @@
   color: var(--content-color-main) !important;
 }
 
-.dark .active-nav > li {
-  border-bottom: 2px solid var(--content-color-dark);
-  color: var(--content-color-dark) !important;
-}
 
 .option-icon {
   width: 30px;
@@ -116,17 +88,9 @@
   transform: scale(1.5, 1.5);
 }
 
-.dark .navbar-svg {
-  fill: var(--content-color-dark);
-}
-
 .option-icon:hover,
 .option-icon:focus {
   transform: rotateZ(180deg);
-}
-
-.dark .option-icon {
-  fill: var(--content-color-dark);
 }
 
 @media screen and (max-width: 768px) {
@@ -146,10 +110,6 @@
     top: 0;
     width: 100vw;
     background-color: var(--background-color-main);
-  }
-
-  .dark .hide-nav-mobile {
-    background-color: var(--background-color-dark);
   }
 
   .hide-nav-mobile ul {

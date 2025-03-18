@@ -13,19 +13,15 @@
   width: 100vw;
   background-color: #7d89a2;
   box-sizing: unset;
-  /* background-color: var(--background-color-main) */
 }
 
-/* .dark .about-section {
-  background-color: var(--background-color-dark);
-} */
 
 .about-section-para {
   font-size: var(--para-font);
   line-height: 1.7em;
   font-style: oblique;
   z-index: 9;
-  color: var(--content-color-dark);
+  color: var(--primary-text);
 }
 
 .box-large {

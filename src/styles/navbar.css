@@ -5,8 +5,9 @@
   top: 0;
   z-index: 99999;
   width: 100vw;
-  box-shadow: 0 2px 2px rgba(255, 255, 255, .12);
-  background-color: var(--background-color-main);
+  box-shadow: 0 2px 2px rgba(31, 41, 55, .12);
+  background-color: rgb(31, 41, 55);
+  opacity: 100%;
 }
 
 .navbar {
@@ -19,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 15px;
+  padding: 5px 25px;
   width: 95%;
   align-items: center;
 }

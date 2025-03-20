@@ -5,9 +5,10 @@ function Footer() {
   return (
     <>
       <div className="footer-app">
-        <h1 className="footer-title">How about grabbing a coffee sometime?</h1>
+        <h1 className="footer-title">Coffee with me.</h1>
         <p className="footer-subheading">
-          Whatever it is, Let's just discuss about it
+          I am always excited to work on some awesome projects, message me and
+          let's discuss over coffee.
         </p>
         <div className="social-media-icons">
           <a href="https://www.linkedin.com/in/ayanbhattachary/">

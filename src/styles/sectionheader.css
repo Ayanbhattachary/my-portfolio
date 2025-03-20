@@ -1,20 +1,20 @@
 .section-header {
   display: flex;
   flex-flow: column nowrap;
-  height: 30vh;
   justify-content: center;
   align-items: center;
+  margin: 80px 0;
 }
 
 .section-header h1 {
   font-size: var(--section-heading-font);
   color: var(--content-color-main);
+  margin: 0;
 }
 
 .section-header p {
   font-size: var(--subtitle-font);
   color: var(--content-color-main);
-  margin-top: 8px;
   text-align: center;
 }
 
@@ -47,7 +47,6 @@
 
 @media screen and (max-width: 768px) {
   .section-header {
-    padding: 0 15px;
-    height: 25vh;
+    margin: 30px 0;
   }
 }

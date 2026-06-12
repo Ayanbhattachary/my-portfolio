@@ -28,15 +28,15 @@ function Navbar() {
                     rel="noreferrer"
                     href="https://drive.google.com/file/d/1dflL5tHp1DXhe_lcGpV7AmLkMEffE0m9/view"
                   >
-                    <li>Resume</li>
+                    <li>My Resume</li>
                   </a>
-                  <a
+                  {/* <a
                     target="_blank"
                     rel="noreferrer"
                     href="https://medium.com/@bhattacharya.ayan"
                   >
                     <li>Blog</li>
-                  </a>
+                  </a> */}
                   {/* <li>
                     <svg
                       className="navbar-svg"

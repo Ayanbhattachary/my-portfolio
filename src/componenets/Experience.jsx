@@ -50,7 +50,13 @@ const Experience = () => {
                   <h3 className="timeline-role">{exp.role}</h3>
                   <p className="timeline-company">{exp.company}</p>
                   <p className="timeline-period">{exp.period}</p>
-                  <p className="timeline-description">{exp.description}</p>
+                  <ul className="timeline-description-list">
+                    {exp.description?.map((item, index) => (
+                      <li key={index} className="timeline-description-item">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                   <div className="tech-tags">
                     {exp.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="tech-tag">

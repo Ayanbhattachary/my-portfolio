@@ -1,64 +1,26 @@
-import React, { useEffect, useState } from "react";
-import avatar from "../../public/images/avatar_2.svg";
+import React from "react";
 import "../styles/hero.css";
 
 const HeroSection = () => {
-  const [index, setIndex] = useState(0);
-  const text =
-    "I love building digital products at scale that solve real-world problems. Thank you for checking in.❤️";
-
-  useEffect(() => {
-    // Adjust avatar size dynamically
-    const adjustAvatarSize = () => {
-      const avatar = document.querySelector(".avatar");
-      if (!avatar) return;
-      const width = window.innerWidth;
-      avatar.style.width =
-        width > 1960 ? "250px" : width < 768 ? "100px" : "200px";
-    };
-
-    adjustAvatarSize();
-    window.addEventListener("resize", adjustAvatarSize);
-
-    // Start typewriter effect after a 3s delay
-    const startTyping = setTimeout(() => {
-      const interval = setInterval(() => {
-        setIndex((prevIndex) => {
-          if (prevIndex < text.length) {
-            return prevIndex + 1;
-          } else {
-            clearInterval(interval);
-            return prevIndex;
-          }
-        });
-      }, 30);
-    }, 3000);
-
-    return () => {
-      window.removeEventListener("resize", adjustAvatarSize);
-      clearTimeout(startTyping);
-    };
-  }, []);
-
   return (
     <div className="container">
       <div className="row">
         <div className="Main-banner">
-          <h1 className="banner-title">Hi, I'm Ayan Bhattacharya</h1>
+          <h1 className="banner-title">
+           Senior Frontend Engineer building products that scale. <br />
+            <span className="banner-name">Ayan Bhattacharya</span>
+          </h1>
           <p className="banner-subtitle">
-            I design and code beautifully simple things. I'm highly skilled in
-            optimizing work processes to enhance user experiences and deliver
-            products that are easy to use and solve user problems.
+            6+ years building trading platforms, authentication systems,
+            and scalable web applications used by millions of users.
           </p>
-          <div className="avatar-animation">
-            <img
-              className="avatar avatar-desktop-1"
-              src={avatar}
-              alt="Profile Avatar"
-            />
-            <div className="greeting-message">
-              <p className="greeting-text">{text.slice(0, index)}</p>
-            </div>
+          <div className="hero-cta-container">
+            <a target="_blank"
+                    rel="noreferrer"
+                    href="https://drive.google.com/file/d/1cq2kJaqEThZeFkV_U3RzhvLtCzDc5J2C/view?usp=sharing"
+                   className="hero-cta">
+              Check my Resume
+            </a>
           </div>
         </div>
       </div>

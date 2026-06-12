@@ -24,7 +24,22 @@
   /* --panel-bg: rgba(31, 41, 55, 0.5); */
 }
 
-  :root {
+:root {
+  --accent-blue: #2563eb;
+  --primary-bg: #ffffff;
+  --secondary-bg: #ffffff;
+  --primary-text: #111827;
+  --secondary-text: #4b5563;
+  --background-color-main: #ffffff;
+  --content-color-main-opacity: rgba(0, 0, 0, 0.6);
+  --content-color-main: #111827;
+  --border-color-main: rgba(0, 0, 0, 0.1);
+  --panel-bg: #ffffff;
+  --timeline-line: rgba(37, 99, 235, 0.2);
+  --timeline-dot: var(--accent-blue);
+}
+
+body.dark {
   --accent-blue: #60a5fa;
   --primary-bg: #111827;
   --secondary-bg: #1f2937;

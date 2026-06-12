@@ -10,10 +10,10 @@ function Profile() {
   return (
     <Router>
       <div className="profile">
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/profile" element={<Main />} />
           <Route path="*" element={<Navigate to="/profile" />} />
         </Routes>
       </div>
